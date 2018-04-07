@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Exercicio 08</title>
+		</head>
+		<body>
+			<script>
+		
+		var nome;
+	 	var matricula,horasTrab,valorHora, diasMes;
+	 	var salarioBruto;
+
+			nome = prompt("Digite seu nome: ");
+			matricula = prompt("Digite sua matricula: ");
+			horasTrab = prompt("Digite as horas trabalhadas no mês: ");
+			valorHora = prompt("Digite o valor da hora: ");
+		
+			salarioBruto = parseInt(horasTrab) * parseInt(valorHora);
+	 			
+	 		alert("Seu nome é "+nome);
+			alert("Sua matricula é :"+matricula);
+			alert("Suas horas trabalhadas no mês são :"+horasTrab);
+			alert("O valor das horas trabalhadas: :"+valorHora);
+			alert("Seu salário bruto é : :"+salarioBruto);
+			
+			//alert(+ nome\n + matricula \n + horasTrab \n + valorHora \n + diasMes \n + salarioBruto);
+			
+			</script>
+		</body>
+	</html>
