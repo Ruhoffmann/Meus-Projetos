@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercicio 12</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+	
+	/*
+		   A condição física de uma pessoa pode ser medida com base no cálculo do IMC, Índice de Massa Corporal,
+		    o qual é calculado dividindo-se a massa da pessoa (m em kg) pela altura da mesma (h em m) elevada ao quadrado (IMC= m/h²).
+
+		     Escreva um programa que leia a massa e a altura de uma pessoa, calcule e mostre o IMC.
+
+    */
+var altura;
+var peso;
+
+peso=prompt("Digite a seu peso(massa) em kg: ");
+altura = parseFl	oat(prompt("Digite sua altura(0.00): "));
+
+var quadrado = altura * altura ;
+alert(quadrado);
+
+var calculo = peso / quadrado;
+
+if(calculo<18.5){
+alert("Você está magro com esse indice: "+parseFloat(calculo));
+}
+else if(calculo>=18.5 && calculo<24.9){
+alert("Você está normal com esse indice: "+parseFloat(calculo));
+}
+
+else if(calculo>=25 && calculo<29.9) {
+alert("Você está com sobre peso com esse indice: "+parseFloat(calculo));
+}
+else if(calculo>=30 && calculo<39.9) {
+alert("Você está com obesidade com esse indice: "+parseFloat(calculo));
+}
+else if (calculo>40){
+alert("Você está com obesidade grave com esse indice: "+parseFloat(calculo));
+}
+/*var m,h,IMC;
+
+m=prompt("Digite a seu peso(massa) em kg: ");
+h=parseFloat(prompt("Digite sua altura: "));
+
+IMC = m / pow(h,2);
+
+alert("Seu índice de massa corporal: " +IMC);*/
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercicio 05</title>
+	</head>
+	<body>
+		<script>
+	
+		var a,b,c;
+		var x1,x2,DELTA;
+
+		a = prompt("Digite um valor para a: ");
+		b = prompt("Digite um valor para b: ");
+		c = prompt("Digite um valor para c: ");
+	
+		/*Se ? < 0, a equação do segundo grau não possui raízes reais;
+
+		Se ? = 0, a equação do segundo grau possui uma raiz real;
+
+		Se ? > 0, a equação do segundo grau possui duas raízes reais.*/
+
+		DELTA = (b*b) - 4*a*c; 
+
+		x1 = (-b + Math.sqrt(DELTA) ) / (2 * a);
+		x2 = (-b - Math.sqrt(DELTA) ) / (2 * a);
+
+		if (DELTA < 0 ) {
+			alert(" A equação do segundo grau não possui raízes reais.");
+		} else{
+
+		alert(x1);
+		alert(x2);
+		}
+		</script>
+	</body>
+</html>
