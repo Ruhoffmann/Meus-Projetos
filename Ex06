@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercicio 06</title>
+	</head>
+	<body>
+		<script>
+	
+		var numero;
+
+		numero = prompt("Digite um número: ");
+
+		if(numero%5 == 0){
+			alert("É multiplo de 5");
+			//o simbolo % tem como resultado o resto da divisão entre 2 números, neste caso i/5
+		} else{
+			alert("Não é multiplo de 5");
+		}	
+		</script>
+	</body>
+</html>
